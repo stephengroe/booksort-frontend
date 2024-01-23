@@ -4,7 +4,7 @@ export default function Root() {
       <h1 className='text-4xl font-bold text-center'>Booksort</h1>
       <p className='text-center'>Organize your personal library</p>
 
-      <div id="sidebar">
+      <div id="sidebar" className='bg-slate-100 p-4 min-h-full max-w-xs border-r-black'>
         <div>
           <form id="search-form" role="search">
             <input
@@ -30,7 +30,7 @@ export default function Root() {
         </div>
 
         <nav>
-          <h3>Your shelves</h3>
+          <h3 className='text-xl font-bold pt-3'>Your shelves</h3>
           <ul>
             <li>
               <a href={`/shelf/1`}>Biography</a>
@@ -42,7 +42,7 @@ export default function Root() {
               <a href={`/shelf/3`}>Technology</a>
             </li>
           </ul>
-          <h3>Find by</h3>
+          <h3 className='text-xl font-bold pt-3'>Find by</h3>
           <ul>
             <li>
               <a href={`/authors/all`}>Authors</a>
