@@ -1,12 +1,12 @@
 export default function Root() {
   return (
     <>
-      <div id="top-bar" className='bg-slate-200 flex items-center px-4 py-2 shadow-lg'>
+      <div id="top-bar" className='bg-slate-200 flex items-center px-4 py-2'>
         <h1 className='text-2xl font-bold text-center'>Booksort</h1>
         <p className='text-sm ml-auto text-center'>Organize your personal library</p>
       </div>
 
-      <div id="sidebar" className='bg-slate-100 p-4 min-h-full max-w-xs border-r-black'>
+      <div id="sidebar" className='bg-slate-100 p-4 min-h-full max-w-64 border-r-black'>
         <div>
           <form id="search-form" role="search">
             <input
