@@ -1,13 +1,13 @@
 export default function Root() {
   return (
     <>
-      <div id="top-bar" className='bg-slate-200 flex items-center px-4 py-2'>
+      <div id="top-bar" className='bg-slate-100 flex items-center px-4 py-2 border-b border-b-slate-200'>
         <h1 className='text-2xl font-bold text-center'>Booksort</h1>
         <p className='text-sm ml-auto text-center'>Organize your personal library</p>
       </div>
 
-      <div id="sidebar" className='bg-slate-100 p-4 min-h-full max-w-64 border-r-black'>
-        <div>
+      <div id="sidebar" className='bg-slate-100 p-4 min-h-full relative max-w-80 border-r-slate-200 border-r leading-8'>
+        <div className='flex gap-2'>
           <form id="search-form" role="search">
             <input
               id="q"
@@ -15,6 +15,7 @@ export default function Root() {
               placeholder="Search"
               type="search"
               name="q"
+              className='rounded-lg py-2 px-3 leading-6 border-slate-200 border'
             />
             <div
               id="search-spinner"
@@ -27,7 +28,9 @@ export default function Root() {
             ></div>
           </form>
           <form method="post">
-            <button type="submit">New</button>
+            <button type="submit"
+              className='bg-white px-3 py-2 rounded-lg border b-color-slate-200 text-sky-500 text-base'
+            >New</button>
           </form>
         </div>
 
