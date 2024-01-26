@@ -8,61 +8,65 @@ export default function Root() {
         <p className='text-sm ml-auto text-center'>Organize your personal library</p>
       </div>
 
-      <div id="sidebar" className='bg-slate-100 p-4 min-h-full relative max-w-80 border-r-slate-200 border-r leading-8'>
-        <div className='flex gap-2'>
-          <form id="search-form" role="search">
-            <input
-              id="q"
-              aria-label="Search contacts"
-              placeholder="Search"
-              type="search"
-              name="q"
-              className='rounded-lg py-2 px-3 leading-6 border-slate-200 border shadow-sm focus:shadow-md focus-visible:outline-none'
-            />
-            <div
-              id="search-spinner"
-              aria-hidden
-              hidden={true}
-            />
-            <div
-              className="sr-only"
-              aria-live="polite"
-            ></div>
-          </form>
-          <form method="post">
-            <button type="submit"
-              className='bg-white px-3 py-2 rounded-lg border b-color-slate-200 text-sky-500 text-base shadow-sm hover:shadow-md'
-            >New</button>
-          </form>
+      <div id='wrapper' className='box-border w-full flex'>
+
+        <div id="sidebar" className='bg-slate-100 p-4 min-h-full relative max-w-80 border-r-slate-200 border-r leading-8 box-border'>
+          <div className='flex gap-2'>
+            <form id="search-form" role="search">
+              <input
+                id="q"
+                aria-label="Search contacts"
+                placeholder="Search"
+                type="search"
+                name="q"
+                className='rounded-lg py-2 px-3 leading-6 border-slate-200 border shadow-sm focus:shadow-md focus-visible:outline-none'
+              />
+              <div
+                id="search-spinner"
+                aria-hidden
+                hidden={true}
+              />
+              <div
+                className="sr-only"
+                aria-live="polite"
+              ></div>
+            </form>
+            <form method="post">
+              <button type="submit"
+                className='bg-white px-3 py-2 rounded-lg border b-color-slate-200 text-sky-500 text-base shadow-sm hover:shadow-md'
+              >New</button>
+            </form>
+          </div>
+
+          <nav>
+            <h3 className='text-l font-bold pt-3'>Your shelves</h3>
+            <ul>
+              <li>
+                <a href={`/shelf/1`}>Biography</a>
+              </li>
+              <li>
+                <a href={`/shelf/2`}>History</a>
+              </li>
+              <li>
+                <a href={`/shelf/3`}>Technology</a>
+              </li>
+            </ul>
+            <h3 className='text-l font-bold pt-3'>Find by</h3>
+            <ul>
+              <li>
+                <a href={`/authors/all`}>Authors</a>
+              </li>
+              <li>
+                <a href={`/genres/all`}>Genres</a>
+              </li>
+            </ul>
+          </nav>
+
         </div>
 
-        <nav>
-          <h3 className='text-l font-bold pt-3'>Your shelves</h3>
-          <ul>
-            <li>
-              <a href={`/shelf/1`}>Biography</a>
-            </li>
-            <li>
-              <a href={`/shelf/2`}>History</a>
-            </li>
-            <li>
-              <a href={`/shelf/3`}>Technology</a>
-            </li>
-          </ul>
-          <h3 className='text-l font-bold pt-3'>Find by</h3>
-          <ul>
-            <li>
-              <a href={`/authors/all`}>Authors</a>
-            </li>
-            <li>
-              <a href={`/genres/all`}>Genres</a>
-            </li>
-          </ul>
-        </nav>
-
-      </div>
-      <div id="detail">
-        <Outlet />
+        <div id='detail' className='p-8 max-w-screen-lg box-border'>
+          <Outlet />
+        </div>
       </div>
     </>
   );
