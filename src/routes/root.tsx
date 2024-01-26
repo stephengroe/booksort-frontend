@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 export default function Root() {
   return (
@@ -42,22 +42,22 @@ export default function Root() {
             <h3 className='text-l font-bold pt-3'>Your shelves</h3>
             <ul>
               <li>
-                <a href={`/shelf/1`}>Biography</a>
+                <Link to={`/shelf/1`}>Biography</Link>
               </li>
               <li>
-                <a href={`/shelf/2`}>History</a>
+                <Link to={`/shelf/2`}>History</Link>
               </li>
               <li>
-                <a href={`/shelf/3`}>Technology</a>
+                <Link to={`/shelf/3`}>Technology</Link>
               </li>
             </ul>
             <h3 className='text-l font-bold pt-3'>Find by</h3>
             <ul>
               <li>
-                <a href={`/authors/all`}>Authors</a>
+                <Link to={`/authors/all`}>Authors</Link>
               </li>
               <li>
-                <a href={`/genres/all`}>Genres</a>
+                <Link to={`/genres/all`}>Genres</Link>
               </li>
             </ul>
           </nav>

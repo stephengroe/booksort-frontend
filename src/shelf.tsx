@@ -1,5 +1,5 @@
 export default function Shelf() {
-  const shelfName: string = "Biography";
+  const shelfName: string = 'Biography';
 
   return (
     <div id='shelf'>
