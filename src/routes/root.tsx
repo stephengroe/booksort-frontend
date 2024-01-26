@@ -15,7 +15,7 @@ export default function Root() {
               placeholder="Search"
               type="search"
               name="q"
-              className='rounded-lg py-2 px-3 leading-6 border-slate-200 border'
+              className='rounded-lg py-2 px-3 leading-6 border-slate-200 border shadow-sm focus:shadow-md focus-visible:outline-none'
             />
             <div
               id="search-spinner"
@@ -29,7 +29,7 @@ export default function Root() {
           </form>
           <form method="post">
             <button type="submit"
-              className='bg-white px-3 py-2 rounded-lg border b-color-slate-200 text-sky-500 text-base'
+              className='bg-white px-3 py-2 rounded-lg border b-color-slate-200 text-sky-500 text-base shadow-sm hover:shadow-md'
             >New</button>
           </form>
         </div>
