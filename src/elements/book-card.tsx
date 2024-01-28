@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function BookDetail() {
+export default function BookCard() {
   type Book = {
     id: string,
     title: string,

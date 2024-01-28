@@ -1,4 +1,4 @@
-import BookDetail from "./book-detail";
+import BookCard from "./book-card";
 
 export default function List() {
   const listName: string = 'Authors';
@@ -6,11 +6,11 @@ export default function List() {
   return (
     <div id='list'>
       <h2 className='text-2xl font-bold mb-8'>{listName}</h2>
-      <BookDetail />
-      <BookDetail />
-      <BookDetail />
-      <BookDetail />
-      <BookDetail />
+      <BookCard />
+      <BookCard />
+      <BookCard />
+      <BookCard />
+      <BookCard />
     </div>
   )
 }
