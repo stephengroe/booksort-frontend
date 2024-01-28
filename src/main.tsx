@@ -5,7 +5,7 @@ import Root from './routes/root';
 import './index.css';
 import ErrorPage from './error-page';
 import Shelf from './shelf';
-import List from './list';
+import List from './elements/list';
 
 const router = createBrowserRouter([
   {
