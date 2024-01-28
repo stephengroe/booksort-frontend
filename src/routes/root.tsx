@@ -64,7 +64,7 @@ export default function Root() {
 
         </div>
 
-        <div id='detail' className='p-8 max-w-screen-lg box-border'>
+        <div id='detail' className='p-12 max-w-screen-md box-border w-full'>
           <Outlet />
         </div>
       </div>
