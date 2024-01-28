@@ -6,6 +6,7 @@ import './index.css';
 import ErrorPage from './error-page';
 import Shelf from './elements/shelf';
 import List from './elements/list';
+import BookDetail from './elements/book-detail';
 
 const router = createBrowserRouter([
   {
@@ -18,12 +19,16 @@ const router = createBrowserRouter([
         element: <Shelf />,
       },
       {
-        path: '/authors/:all',
+        path: '/authors/all',
         element: <List />,
       },
       {
-        path: '/genres/:all',
+        path: '/genres/all',
         element: <List />,
+      },
+      {
+        path: '/book/:bookId',
+        element: <BookDetail />,
       },
     ]
   },
