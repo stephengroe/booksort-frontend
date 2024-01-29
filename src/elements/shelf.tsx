@@ -3,7 +3,7 @@ export default function Shelf() {
 
   return (
     <div id='shelf'>
-      <h2 className='text-2xl font-bold'>{shelfName}</h2>
+      <h2>{shelfName}</h2>
     </div>
   )
 }

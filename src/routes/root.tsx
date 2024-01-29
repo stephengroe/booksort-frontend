@@ -33,13 +33,13 @@ export default function Root() {
             </form>
             <form method="post">
               <button type="submit"
-                className='bg-white px-3 py-2 rounded-lg border b-color-slate-200 text-sky-500 text-base shadow-sm hover:shadow-md'
+                className='btn'
               >New</button>
             </form>
           </div>
 
           <nav>
-            <h3 className='text-l font-bold pt-3'>Your shelves</h3>
+            <h3>Your shelves</h3>
             <ul>
               <li>
                 <Link to={`/shelf/1`}>Biography</Link>
@@ -51,7 +51,7 @@ export default function Root() {
                 <Link to={`/shelf/3`}>Technology</Link>
               </li>
             </ul>
-            <h3 className='text-l font-bold pt-3'>Find by</h3>
+            <h3>Find by</h3>
             <ul>
               <li>
                 <Link to={`/authors/all`}>Authors</Link>

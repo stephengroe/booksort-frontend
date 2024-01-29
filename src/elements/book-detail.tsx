@@ -26,11 +26,11 @@ export default function BookDetail() {
       <img src={bookInfo.imageUrl} />
 
       <div className='relative'>
-        <h2 className='text-2xl font-bold mb-2'>{bookInfo.title}</h2>
-        <h3 className='text-xl mb-2'>{bookInfo.author}</h3>
+        <h2>{bookInfo.title}</h2>
+        <h3>{bookInfo.author}</h3>
         <p className='mb-2'>{bookInfo.publisher} | {bookInfo.year}</p>
         <p className='mb-2'>{bookInfo.summary}</p>
-        <p className='absolute bottom-0 right-0'><a href='#'>Edit</a> | <a>Delete</a></p>
+        <p className='absolute bottom-0 right-0'><a className='btn' href='#'>Edit</a> | <a>Delete</a></p>
       </div>
     </div>
   )

@@ -20,8 +20,8 @@ export default function BookCard() {
       <img src={bookInfo.imageUrl} />
 
       <div>
-        <h3 className='text-xl font-bold'>{bookInfo.title}</h3>
-        <h4 className='text-m'>{bookInfo.author}</h4>
+        <h3>{bookInfo.title}</h3>
+        <h4>{bookInfo.author}</h4>
       </div>
     </Link>
   )
