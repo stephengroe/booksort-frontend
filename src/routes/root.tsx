@@ -5,14 +5,27 @@ export default function Root() {
     <>
       <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-4 border-b border-b-slate-200'>
         <h1 className='justify-self-start box-border text-2xl font-bold w-2/12 pl-4'>Booksort</h1>
-        <form id="search-form" role="search" className='justify-self-start'>
+        <form id="search-form" role="search" className='flex items-center justify-self-start pl-4 p-2 border-l border-l-slate-200 '>
+          <svg
+            className='h-5 w-5 text-slate-400 align-middle mr-2'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            stroke-width='2'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z'
+            />
+          </svg>
           <input
             id="q"
             aria-label="Search contacts"
             placeholder="Search"
             type="search"
             name="q"
-            className='pl-8 p-2 border-l border-l-slate-200 focus-visible:outline-none focus-visible:border-slate-400'
+            className='focus-visible:outline-none'
           />
           <div
             id="search-spinner"
@@ -24,7 +37,22 @@ export default function Root() {
             aria-live="polite"
           ></div>
         </form>
-        <p className='text-sm ml-auto text-center w-2/12 border-l p-2 border-l-slate-200'>Organize your personal library</p>
+        <div id='notifications' className='justify-self-end ml-auto'>
+          <svg
+              className='h-5 w-5 text-slate-400 align-middle mr-2'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+              stroke-width='2'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0'
+              />
+            </svg>
+        </div>
+        <p className='text-sm text-center w-2/12 border-l p-2 border-l-slate-200'>Organize your personal library</p>
       </div>
 
       <div id='wrapper' className='box-border w-full flex'>
@@ -33,9 +61,24 @@ export default function Root() {
           <div className='flex gap-2'>
           </div>
 
-          <nav>
-            <h3>Your shelves</h3>
-            <ul>
+          <nav className='leading-10'>
+            <div className='flex items-center'>
+              <svg
+                className='h-4 w-4 text-black align-middle mr-2'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                stroke-width='2'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0 1 20.25 6v12A2.25 2.25 0 0 1 18 20.25H6A2.25 2.25 0 0 1 3.75 18V6A2.25 2.25 0 0 1 6 3.75h1.5m9 0h-9'
+                />
+              </svg>
+              <h3 className='mb-0'>Your shelves</h3>
+            </div>
+            <ul className='ml-6'>
               <li>
                 <Link to={`/shelf/1`}>Biography</Link>
               </li>
@@ -46,8 +89,23 @@ export default function Root() {
                 <Link to={`/shelf/3`}>Technology</Link>
               </li>
             </ul>
-            <h3>Find by</h3>
-            <ul>
+            <div className='flex items-center mt-4'>
+              <svg
+                className='h-4 w-4 text-black align-middle mr-2'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                stroke-width='2'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25'
+                />
+              </svg>
+              <h3 className='mb-0'>Sort by</h3>
+            </div>
+            <ul className='ml-6'>
               <li>
                 <Link to={`/authors/all`}>Authors</Link>
               </li>
