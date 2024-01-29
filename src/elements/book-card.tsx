@@ -16,7 +16,7 @@ export default function BookCard() {
   }
 
   return (
-    <Link to={`/book/${bookInfo.id}`} className='box-border p-6 flex gap-4 items-center w-full rounded-lg hover:bg-slate-100'>
+    <Link to={`/book/${bookInfo.id}`} className='bg-white box-border shadow-sm p-6 mb-4 flex gap-4 items-center w-full rounded-lg hover:shadow-md'>
       <img src={bookInfo.imageUrl} />
 
       <div>

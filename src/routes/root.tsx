@@ -3,14 +3,14 @@ import { Outlet, Link } from "react-router-dom";
 export default function Root() {
   return (
     <>
-      <div id="top-bar" className='bg-slate-100 flex items-center px-4 py-2 border-b border-b-slate-200'>
+      <div id="top-bar" className='flex items-center px-4 py-2 border-b border-b-slate-200'>
         <h1 className='text-2xl font-bold text-center'>Booksort</h1>
         <p className='text-sm ml-auto text-center'>Organize your personal library</p>
       </div>
 
       <div id='wrapper' className='box-border w-full flex'>
 
-        <div id="sidebar" className='bg-slate-100 p-4 min-h-full relative max-w-80 border-r-slate-200 border-r leading-8 box-border'>
+        <div id="sidebar" className='p-4 min-h-full relative max-w-80 border-r-slate-200 border-r leading-8 box-border'>
           <div className='flex gap-2'>
             <form id="search-form" role="search">
               <input
@@ -64,8 +64,10 @@ export default function Root() {
 
         </div>
 
-        <div id='detail' className='p-12 max-w-screen-md box-border w-full'>
-          <Outlet />
+        <div id='detail' className='bg-slate-50 p-12 box-border w-full'>
+          <div className='max-w-screen-md'>
+            <Outlet />
+          </div>
         </div>
       </div>
     </>
