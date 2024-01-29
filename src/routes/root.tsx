@@ -93,34 +93,7 @@ export default function Root() {
           </form>
 
           <nav className='leading-10'>
-            <div className='flex items-center'>
-              <svg
-                className='h-4 w-4 text-black align-middle mr-2'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='2'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0 1 20.25 6v12A2.25 2.25 0 0 1 18 20.25H6A2.25 2.25 0 0 1 3.75 18V6A2.25 2.25 0 0 1 6 3.75h1.5m9 0h-9'
-                />
-              </svg>
-              <h3 className='mb-0'>Your shelves</h3>
-            </div>
-            <ul className='ml-6'>
-              <li>
-                <Link to={`/shelf/1`}>Biography</Link>
-              </li>
-              <li>
-                <Link to={`/shelf/2`}>History</Link>
-              </li>
-              <li>
-                <Link to={`/shelf/3`}>Technology</Link>
-              </li>
-            </ul>
-            <div className='flex items-center mt-6'>
+          <div className='flex items-center mt-6'>
               <svg
                 className='h-4 w-4 text-black align-middle mr-2'
                 fill='none'
@@ -136,12 +109,45 @@ export default function Root() {
               </svg>
               <h3 className='mb-0'>Sort by</h3>
             </div>
-            <ul className='ml-6'>
-              <li>
-                <Link to={`/authors/all`}>Authors</Link>
+            <ul className='ml-2'>
+              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
+                <Link className='text-sky-500 font-bold' to={`/authors/all`}>Authors</Link>
+                <span className='ml-auto border rounded-lg text-sky-500 border-sky-500 text-sm px-2'>9</span>
               </li>
-              <li>
+              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
                 <Link to={`/genres/all`}>Genres</Link>
+                <span className='ml-auto border rounded-lg text-gray-400 border-gray-400 text-sm px-2'>3</span>
+              </li>
+            </ul>
+            
+            <div className='flex items-center mt-6'>
+              <svg
+                className='h-4 w-4 text-black align-middle mr-2'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                stroke-width='2'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0 1 20.25 6v12A2.25 2.25 0 0 1 18 20.25H6A2.25 2.25 0 0 1 3.75 18V6A2.25 2.25 0 0 1 6 3.75h1.5m9 0h-9'
+                />
+              </svg>
+              <h3 className='mb-0'>Your shelves</h3>
+            </div>
+            <ul className='ml-2'>
+              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
+                <Link to={`/shelf/1`}>Biography</Link>
+                <span className='ml-auto border rounded-lg text-gray-400 border-gray-400 text-sm px-2'>12</span>
+              </li>
+              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
+                <Link to={`/shelf/1`}>History</Link>
+                <span className='ml-auto border rounded-lg text-gray-400 border-gray-400 text-sm px-2'>29</span>
+              </li>
+              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
+                <Link to={`/shelf/1`}>Technology</Link>
+                <span className='ml-auto border rounded-lg text-gray-400 border-gray-400 text-sm px-2'>18</span>
               </li>
             </ul>
           </nav>
