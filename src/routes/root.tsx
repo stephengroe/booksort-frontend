@@ -31,11 +31,6 @@ export default function Root() {
                 aria-live="polite"
               ></div>
             </form>
-            <form method="post">
-              <button type="submit"
-                className='btn'
-              >New</button>
-            </form>
           </div>
 
           <nav>
@@ -70,6 +65,10 @@ export default function Root() {
           </div>
         </div>
       </div>
+
+      <form method='post'>
+        <button type='submit' className='btn fixed bottom-4 right-4'>+</button>
+      </form>
     </>
   );
 }
