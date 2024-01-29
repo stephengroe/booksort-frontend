@@ -3,24 +3,24 @@ import { Outlet, Link } from "react-router-dom";
 export default function Root() {
   return (
     <>
-      <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-4 border-b border-b-slate-200'>
-        <div className='flex items-center justify-start box-border text-2xl font-bold w-2/12 pl-4'>
+      <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-6 border-b border-b-slate-200'>
+        <div className='flex items-center justify-start box-border text-2xl font-bold w-72 pl-6'>
           <svg
               className='h-5 w-5 text-sky-500 align-middle mr-2'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
-              stroke-width='2'
+              stroke-width='4'
             >
             <path
-              stroke-linecap='round'
+              stroke-linecap='square'
               stroke-linejoin='round'
               d='M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25'
             />
           </svg>
           <h1>Booksort</h1>
         </div>
-        <form id="search-form" role="search" className='flex items-center justify-self-start pl-4 p-2 border-l border-l-slate-200 '>
+        <form id="search-form" role="search" className='flex items-center justify-self-start pl-6 p-2 border-l border-l-slate-200 '>
           <svg
             className='h-5 w-5 text-slate-400 align-middle mr-2'
             fill='none'
@@ -67,12 +67,12 @@ export default function Root() {
               />
             </svg>
         </div>
-        <p className='text-sm text-center w-2/12 border-l p-2 border-l-slate-200'>Organize your personal library</p>
+        <p className='text-sm text-center w-auto px-6 border-l p-2 border-l-slate-200'>Welcome, reader</p>
       </div>
 
       <div id='wrapper' className='box-border w-full flex'>
 
-        <div id='sidebar' className='min-h-full p-4 relative w-2/12 border-r-slate-200 border-r leading-8 box-border'>
+        <div id='sidebar' className='min-h-full p-6 relative min-w-72 border-r-slate-200 border-r leading-8 box-border'>
 
           <form method='post'>
             <button type='submit' className='btn flex items-center justify-center'>
@@ -120,7 +120,7 @@ export default function Root() {
                 <Link to={`/shelf/3`}>Technology</Link>
               </li>
             </ul>
-            <div className='flex items-center mt-4'>
+            <div className='flex items-center mt-6'>
               <svg
                 className='h-4 w-4 text-black align-middle mr-2'
                 fill='none'
