@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 export default function Root() {
   return (
     <>
-      <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-2 border-b border-b-slate-200'>
+      <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-4 border-b border-b-slate-200'>
         <h1 className='justify-self-start box-border text-2xl font-bold w-2/12 pl-4'>Booksort</h1>
         <form id="search-form" role="search" className='justify-self-start'>
           <input
@@ -12,7 +12,7 @@ export default function Root() {
             placeholder="Search"
             type="search"
             name="q"
-            className='rounded-lg py-2 px-3 leading-6 border-slate-200 border shadow-sm focus:shadow-md focus-visible:outline-none'
+            className='pl-8 p-2 border-l border-l-slate-200 focus-visible:outline-none focus-visible:border-slate-400'
           />
           <div
             id="search-spinner"
@@ -24,7 +24,7 @@ export default function Root() {
             aria-live="polite"
           ></div>
         </form>
-        <p className='text-sm ml-auto text-center w-2/12'>Organize your personal library</p>
+        <p className='text-sm ml-auto text-center w-2/12 border-l p-2 border-l-slate-200'>Organize your personal library</p>
       </div>
 
       <div id='wrapper' className='box-border w-full flex'>
