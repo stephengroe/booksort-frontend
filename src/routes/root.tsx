@@ -58,8 +58,24 @@ export default function Root() {
       <div id='wrapper' className='box-border w-full flex'>
 
         <div id='sidebar' className='min-h-full p-4 relative w-2/12 border-r-slate-200 border-r leading-8 box-border'>
-          <div className='flex gap-2'>
-          </div>
+
+          <form method='post'>
+            <button type='submit' className='btn flex items-center justify-center'>
+              <svg
+              className='h-5 w-5 text-sky-500 align-middle mr-2'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+              stroke-width='2'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'
+                />
+              </svg>
+            Add Book</button>
+          </form>
 
           <nav className='leading-10'>
             <div className='flex items-center'>
@@ -123,10 +139,6 @@ export default function Root() {
           </div>
         </div>
       </div>
-
-      <form method='post'>
-        <button type='submit' className='btn fixed bottom-4 right-4'>+</button>
-      </form>
     </>
   );
 }
