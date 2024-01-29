@@ -3,34 +3,34 @@ import { Outlet, Link } from "react-router-dom";
 export default function Root() {
   return (
     <>
-      <div id="top-bar" className='flex items-center px-4 py-2 border-b border-b-slate-200'>
-        <h1 className='text-2xl font-bold text-center'>Booksort</h1>
-        <p className='text-sm ml-auto text-center'>Organize your personal library</p>
+      <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-2 border-b border-b-slate-200'>
+        <h1 className='justify-self-start box-border text-2xl font-bold w-2/12 pl-4'>Booksort</h1>
+        <form id="search-form" role="search" className='justify-self-start'>
+          <input
+            id="q"
+            aria-label="Search contacts"
+            placeholder="Search"
+            type="search"
+            name="q"
+            className='rounded-lg py-2 px-3 leading-6 border-slate-200 border shadow-sm focus:shadow-md focus-visible:outline-none'
+          />
+          <div
+            id="search-spinner"
+            aria-hidden
+            hidden={true}
+          />
+          <div
+            className="sr-only"
+            aria-live="polite"
+          ></div>
+        </form>
+        <p className='text-sm ml-auto text-center w-2/12'>Organize your personal library</p>
       </div>
 
       <div id='wrapper' className='box-border w-full flex'>
 
-        <div id="sidebar" className='p-4 min-h-full relative max-w-80 border-r-slate-200 border-r leading-8 box-border'>
+        <div id='sidebar' className='min-h-full p-4 relative w-2/12 border-r-slate-200 border-r leading-8 box-border'>
           <div className='flex gap-2'>
-            <form id="search-form" role="search">
-              <input
-                id="q"
-                aria-label="Search contacts"
-                placeholder="Search"
-                type="search"
-                name="q"
-                className='rounded-lg py-2 px-3 leading-6 border-slate-200 border shadow-sm focus:shadow-md focus-visible:outline-none'
-              />
-              <div
-                id="search-spinner"
-                aria-hidden
-                hidden={true}
-              />
-              <div
-                className="sr-only"
-                aria-live="polite"
-              ></div>
-            </form>
           </div>
 
           <nav>
@@ -59,7 +59,7 @@ export default function Root() {
 
         </div>
 
-        <div id='detail' className='bg-slate-50 p-12 box-border w-full'>
+        <div id='detail' className='bg-slate-50 p-12 box-border w-10/12'>
           <div className='max-w-screen-md'>
             <Outlet />
           </div>
