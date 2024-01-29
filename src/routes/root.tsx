@@ -4,7 +4,22 @@ export default function Root() {
   return (
     <>
       <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-4 border-b border-b-slate-200'>
-        <h1 className='justify-self-start box-border text-2xl font-bold w-2/12 pl-4'>Booksort</h1>
+        <div className='flex items-center justify-start box-border text-2xl font-bold w-2/12 pl-4'>
+          <svg
+              className='h-5 w-5 text-sky-500 align-middle mr-2'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+              stroke-width='2'
+            >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25'
+            />
+          </svg>
+          <h1>Booksort</h1>
+        </div>
         <form id="search-form" role="search" className='flex items-center justify-self-start pl-4 p-2 border-l border-l-slate-200 '>
           <svg
             className='h-5 w-5 text-slate-400 align-middle mr-2'
