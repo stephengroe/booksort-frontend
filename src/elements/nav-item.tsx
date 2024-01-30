@@ -8,9 +8,11 @@ type MenuList = {
 
 export default function NavItem(item: MenuList) {
   return (
-    <NavLink className='nav-link flex items-center relative' to={item.link}>
-      {item.name}
-    <span className='ml-auto border rounded-lg border-gray-400 text-gray-400 text-sm px-2'>{item.quantity}</span>
-  </NavLink>
+    <li className='transition-all duration-75 cursor-pointer justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
+      <NavLink className='nav-link flex items-center relative transition-all duration-75' to={item.link}>
+        {item.name}
+        <span className='ml-auto border rounded-lg border-gray-400 text-gray-400 text-sm px-2'>{item.quantity}</span>
+      </NavLink>
+  </li>
   )
 }

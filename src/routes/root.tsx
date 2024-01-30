@@ -165,9 +165,7 @@ export default function Root() {
             <ul className='ml-2'>
               {sortByList.map(item => {
                 return (
-                  <li className='cursor-pointer justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
-                    <NavItem {...item} />
-                  </li>
+                  <NavItem {...item} />
                 )
               })}
             </ul>
@@ -191,14 +189,11 @@ export default function Root() {
             <ul className='ml-2'>
               {shelvesList.map(item => {
                   return (
-                    <li className='cursor-pointer justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
-                      <NavItem {...item} />
-                    </li>
+                    <NavItem {...item} />
                   )
                 })}
             </ul>
           </nav>
-
         </div>
 
         <div id='detail' className='bg-slate-50 p-12 box-border w-10/12'>
