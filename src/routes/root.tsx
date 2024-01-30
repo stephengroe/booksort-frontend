@@ -1,6 +1,60 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import NavItem from "../elements/nav-item";
 
 export default function Root() {
+  
+  type MenuList = {
+    name: string,
+    quantity: number,
+    link: string,
+  }
+
+  const sortByList: Array<MenuList> = [
+    {
+      name: 'Authors',
+      quantity: 9,
+      link: 'authors/all',
+    },
+    {
+      name: 'Genres',
+      quantity: 3,
+      link: 'genres/all',
+    },
+    {
+      name: 'Languages',
+      quantity: 2,
+      link: 'languages/all',
+    },
+  ];
+
+  const shelvesList: Array<MenuList> = [
+    {
+      name: 'Biography',
+      quantity: 12,
+      link: 'shelf/1',
+    },
+    {
+      name: 'Classics',
+      quantity: 7,
+      link: 'shelf/2',
+    },
+    {
+      name: 'History',
+      quantity: 29,
+      link: 'shelf/3',
+    },
+    {
+      name: 'Psychology',
+      quantity: 25,
+      link: 'shelf/4',
+    },
+    {
+      name: 'Technology',
+      quantity: 295,
+      link: 'shelf/5',
+    },
+  ];
+
   return (
     <>
       <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-6 border-b border-b-slate-200'>
@@ -109,14 +163,13 @@ export default function Root() {
               <h3 className='mb-0'>Sort by</h3>
             </div>
             <ul className='ml-2'>
-              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
-                <Link className='text-sky-500 font-bold' to={`/authors/all`}>Authors</Link>
-                <span className='ml-auto border rounded-lg text-sky-500 border-sky-500 text-sm px-2'>9</span>
-              </li>
-              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
-                <Link to={`/genres/all`}>Genres</Link>
-                <span className='ml-auto border rounded-lg text-gray-400 border-gray-400 text-sm px-2'>3</span>
-              </li>
+              {sortByList.map(item => {
+                return (
+                  <li className='cursor-pointer justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
+                    <NavItem {...item} />
+                  </li>
+                )
+              })}
             </ul>
             
             <div className='flex items-center mt-6'>
@@ -136,18 +189,13 @@ export default function Root() {
               <h3 className='mb-0'>Your shelves</h3>
             </div>
             <ul className='ml-2'>
-              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
-                <Link to={`/shelf/1`}>Biography</Link>
-                <span className='ml-auto border rounded-lg text-gray-400 border-gray-400 text-sm px-2'>12</span>
-              </li>
-              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
-                <Link to={`/shelf/1`}>History</Link>
-                <span className='ml-auto border rounded-lg text-gray-400 border-gray-400 text-sm px-2'>29</span>
-              </li>
-              <li className='cursor-pointer flex justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
-                <Link to={`/shelf/1`}>Technology</Link>
-                <span className='ml-auto border rounded-lg text-gray-400 border-gray-400 text-sm px-2'>18</span>
-              </li>
+              {shelvesList.map(item => {
+                  return (
+                    <li className='cursor-pointer justify-start items-center hover:bg-slate-100 rounded-lg px-4'>
+                      <NavItem {...item} />
+                    </li>
+                  )
+                })}
             </ul>
           </nav>
 

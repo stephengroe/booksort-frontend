@@ -27,6 +27,10 @@ const router = createBrowserRouter([
         element: <List />,
       },
       {
+        path: '/languages/all',
+        element: <List />,
+      },
+      {
         path: '/book/:bookId',
         element: <BookDetail />,
       },
