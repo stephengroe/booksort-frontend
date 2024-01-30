@@ -70,7 +70,7 @@ export default function Root() {
         <p className='text-sm text-center w-auto px-6 border-l p-2 border-l-slate-200'>Welcome, reader</p>
       </div>
 
-      <div id='wrapper' className='box-border w-full flex'>
+      <div id='wrapper' className='box-border w-full h-full flex min-h-max'>
 
         <div id='sidebar' className='min-h-full p-6 relative min-w-72 border-r-slate-200 border-r leading-8 box-border'>
 
