@@ -57,8 +57,8 @@ export default function Root() {
 
   return (
     <>
-      <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-6 border-b border-b-slate-200'>
-        <div className='flex items-center justify-start box-border text-2xl font-bold w-72 pl-6'>
+      <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-2 border-b border-b-slate-200'>
+        <div className='flex items-center justify-center box-border text-2xl font-bold w-72'>
           <svg
               className='h-5 w-5 text-sky-500 align-middle mr-2'
               fill='none'
@@ -74,7 +74,7 @@ export default function Root() {
           </svg>
           <h1>Booksort</h1>
         </div>
-        <form id="search-form" role="search" className='flex items-center justify-self-start pl-6 p-2 border-l border-l-slate-200 '>
+        <form id="search-form" role="search" className='w-4/12 flex items-center justify-self-start pl-6 p-2 border-l border-l-slate-200 '>
           <svg
             className='h-5 w-5 text-slate-400 align-middle mr-2'
             fill='none'
@@ -94,7 +94,7 @@ export default function Root() {
             placeholder="Search"
             type="search"
             name="q"
-            className='focus-visible:outline-none'
+            className='focus-visible:outline-none w-full'
           />
           <div
             id="search-spinner"
