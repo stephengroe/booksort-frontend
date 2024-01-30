@@ -10,7 +10,7 @@ Enter Booksort.
 
 It's a basic app that (once finished) will let me keep my books sorted. This is the frontend, which will connect to the [Booksort backend](https://github.com/stephengroe/booksort-backend) via API. It will incorporate the same logic as my version-zero prototype, [tinylib](https://github.com/stephengroe/tinylib).
 
-- **Live demo:** [https://stephengroe.github.io/booksort-frontend/](https://stephengroe.github.io/booksort-frontend/)
+- **Live demo:** [Netlify](https://curious-cuchufli-195a99.netlify.app/authors/all)
 - **Built with:** React, TypeScript, TailwindCSS
 - **License:** MIT
 
