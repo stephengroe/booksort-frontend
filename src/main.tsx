@@ -4,9 +4,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/root';
 import './index.css';
 import ErrorPage from './error-page';
-import Shelf from './elements/shelf';
-import List from './elements/list';
-import BookDetail from './elements/book-detail';
+import Shelf from './routes/shelf';
+import List from './routes/list';
+import BookDetail from './routes/book-detail';
 
 const router = createBrowserRouter([
   {

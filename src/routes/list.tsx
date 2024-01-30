@@ -1,4 +1,4 @@
-import BookCard from "./book-card";
+import BookCard from "../components/book-card";
 
 export default function List() {
   const listName: string = 'Authors';
