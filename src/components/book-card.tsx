@@ -1,14 +1,7 @@
 import { Link } from 'react-router-dom';
 
 export default function BookCard() {
-  type Book = {
-    id: string,
-    title: string,
-    author: string,
-    imageUrl: string,
-  }
-
-  const bookInfo: Book = {
+  const bookInfo: BookConcise = {
     id: '12345asdfg',
     title: 'Antifragile',
     author: 'Taleb, Nassim Nicholas',

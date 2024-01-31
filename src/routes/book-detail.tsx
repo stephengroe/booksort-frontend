@@ -1,14 +1,4 @@
 export default function BookDetail() {
-  type Book = {
-    id: string,
-    title: string,
-    author: string,
-    year: number,
-    imageUrl: string,
-    summary: string,
-    isbn: string,
-    publisher: string,
-  }
 
   const bookInfo: Book = {
     id: '12345asdfg',
