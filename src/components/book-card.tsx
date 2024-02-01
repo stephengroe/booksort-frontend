@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
 
-export default function BookCard() {
-  const bookInfo: BookConcise = {
-    id: '12345asdfg',
-    title: 'Antifragile',
-    author: 'Taleb, Nassim Nicholas',
-    imageUrl: 'https://placekitten.com/g/75/100',
-  }
+interface BookCardProps {
+  bookInfo: BookConcise
+}
 
+const BookCard: React.FC<BookCardProps> = ({ bookInfo }) => {
   return (
     <Link to={`/book/${bookInfo.id}`} className='bg-white box-border shadow-sm p-6 mb-4 flex gap-4 items-center w-full rounded-lg hover:shadow-md'>
       <img src={bookInfo.imageUrl} />
@@ -19,3 +16,5 @@ export default function BookCard() {
     </Link>
   )
 }
+
+export default BookCard;

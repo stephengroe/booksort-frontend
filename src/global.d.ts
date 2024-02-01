@@ -1,12 +1,13 @@
-type Book = {
+interface BookConcise {
   id: string,
   title: string,
   author: string,
-  year: number,
   imageUrl: string,
+}
+
+interface Book extends BookConcise {
+  year: number,
   summary: string,
   isbn: string,
   publisher: string,
 }
-
-type BookConcise = Pick<Book, 'id' | 'title' | 'author' | 'imageUrl'>;
