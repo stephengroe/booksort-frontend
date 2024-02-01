@@ -1,19 +1,15 @@
-export default function BookDetail() {
+import { useParams } from "react-router-dom";
+import { books } from "../mock-db";
 
-  const bookInfo: Book = {
-    id: '12345asdfg',
-    title: 'Antifragile',
-    year: 2008,
-    author: 'Taleb, Nassim Nicholas',
-    imageUrl: 'https://placekitten.com/g/200/250',
-    summary: 'A more detailed description about this title, etc.',
-    isbn: '1234567890',
-    publisher: 'Random House'
-  }
+export default function BookDetail() {
+  let { bookId } = useParams();
+  if (typeof bookId === 'undefined') bookId = '0';
+  let bookInfo: Book | undefined = books.find(book => book.id === bookId);
+  if (typeof bookInfo === 'undefined') bookInfo = books[0];
 
   return (
     <div className='box-border flex gap-8 items-top w-full'>
-      <img src={bookInfo.imageUrl} />
+      <img src={bookInfo.imageUrl} className='object-cover min-w-56 shadow-md' />
 
       <div className='relative'>
         <h2>{bookInfo.title}</h2>
