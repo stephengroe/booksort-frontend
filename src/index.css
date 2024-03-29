@@ -22,10 +22,10 @@
   }
   
   a.nav-link.active {
-    @apply text-sky-500 font-bold;
+    @apply text-blue-100 font-bold;
   }
 
   a.nav-link.active span {
-    @apply bg-sky-500 text-white border-none font-normal;
+    @apply bg-blue-1 text-white border-none font-normal;
   }
 }

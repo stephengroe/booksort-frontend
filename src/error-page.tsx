@@ -19,7 +19,7 @@ export default function ErrorPage() {
   }  
 
   return (
-    <div className='bg-slate-100 rounded-lg m-auto p-8 shadow-md text-center max-w-fit mt-20'>
+    <div className='bg-slate-1 rounded-lg m-auto p-8 shadow-md text-center max-w-fit mt-20'>
       <h1 className='text-3xl font-bold leading-8 pb-4'>Oops!</h1>
       <p className='leading-8'>There's been an unexpected error. We're working on it!</p>
       <p className='leading-8 italic'>{errorMessage}</p>
