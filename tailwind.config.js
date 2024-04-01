@@ -8,6 +8,6 @@ export default {
     extend: {},
   },
   plugins: [
-    import("tailwindcss-radix-colors"),
+    require("tailwindcss-radix-colors")
   ],
 }
