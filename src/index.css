@@ -15,17 +15,17 @@
     @apply text-base;
   }
 }
-
+/* 
 @layer components {
   .btn {
-    @apply box-border bg-white px-3 py-2 rounded-lg border text-blue-4 text-base shadow-sm hover:shadow-md w-full text-center font-semibold transition-all duration-75;
+    @apply box-border bg-white px-3 py-2 rounded-lg border text-blue-9 text-base shadow-sm hover:shadow-md w-full text-center font-semibold transition-all duration-75;
   }
   
   a.nav-link.active {
-    @apply text-blue-2 font-bold;
+    @apply text-blue-11 font-bold;
   }
 
   a.nav-link.active span {
-    @apply bg-blue-1 text-white border-none font-normal;
+    @apply bg-blue-11 text-white border-none font-normal;
   }
-}
+} */

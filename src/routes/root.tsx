@@ -60,7 +60,7 @@ export default function Root() {
       <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-2 border-b border-b-slate-200'>
         <div className='flex items-center justify-center box-border text-2xl font-bold w-72'>
           <svg
-              className='h-5 w-5 text-sky-500 align-middle mr-2'
+              className='h-5 w-5 text-blue-8 align-middle mr-2'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
@@ -131,7 +131,7 @@ export default function Root() {
           <form method='post'>
             <button type='submit' className='btn flex items-center justify-center'>
               <svg
-              className='h-5 w-5 text-sky-500 align-middle mr-2'
+              className='h-5 w-5 text-blue-8 align-middle mr-2'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
