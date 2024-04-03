@@ -57,7 +57,7 @@ export default function Root() {
 
   return (
     <>
-      <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-2 border-b border-b-slate-200'>
+      <div id="top-bar" className='w-full sticky z-10 top-0 shadow-sm bg-white box-border flex items-center justify-start py-2 border-b border-b-gray-6'>
         <div className='flex items-center justify-center box-border text-2xl font-bold w-72'>
           <svg
               className='h-5 w-5 text-blue-8 align-middle mr-2'
@@ -74,7 +74,7 @@ export default function Root() {
           </svg>
           <h1>Booksort</h1>
         </div>
-        <form id="search-form" role="search" className='w-4/12 flex items-center justify-self-start pl-6 p-2 border-l border-l-slate-200 '>
+        <form id="search-form" role="search" className='w-4/12 flex items-center justify-self-start pl-6 p-2'>
           <svg
             className='h-5 w-5 text-slate-400 align-middle mr-2'
             fill='none'
@@ -121,12 +121,12 @@ export default function Root() {
               />
             </svg>
         </div>
-        <p className='text-sm text-center w-auto px-6 border-l p-2 border-l-slate-200'>Welcome, reader</p>
+        <p className='text-sm text-center w-auto px-6 p-2'>Welcome, reader</p>
       </div>
 
       <div id='wrapper' className='box-border w-full h-full flex min-h-max'>
 
-        <div id='sidebar' className='min-h-full p-6 relative min-w-72 border-r-slate-200 border-r leading-8 box-border'>
+        <div id='sidebar' className='min-h-full p-6 relative min-w-72 border-r border-r-gray-6 leading-8 box-border'>
 
           <form method='post'>
             <button type='submit' className='btn flex items-center justify-center'>
