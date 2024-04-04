@@ -20,9 +20,9 @@ It's a basic app that (once finished) will let me keep my books sorted. This is 
 
 Really quite few at this point. The layout is structured, but the logic is still a work in progress. I'll be importing that logic from the previous iteration of this project, [tinylib](https://github.com/stephengroe/tinylib), which includes:
 
-* **Add a book by ISBN.** Enter an ISBN and the app will auto-fill book data pulled from the [OpenLibrary API](https://openlibrary.org/developers/api).
-* **ISBN validation.** The app validates ISBNs on the client side before sending an API request. It does this by analyzing requirements for 10- and 13-digit numbers, like valid characters and check digits, according to [the ISBN specification](https://en.wikipedia.org/wiki/ISBN#Check_digits).
-* **Manually add a book.** It's a lot faster to automatically add a book, but no database is perfect. You can manually add any title that's not in the OpenLibrary database.
+- **Add a book by ISBN.** Enter an ISBN and the app will auto-fill book data pulled from the [OpenLibrary API](https://openlibrary.org/developers/api).
+- **ISBN validation.** The app validates ISBNs on the client side before sending an API request. It does this by analyzing requirements for 10- and 13-digit numbers, like valid characters and check digits, according to [the ISBN specification](https://en.wikipedia.org/wiki/ISBN#Check_digits).
+- **Manually add a book.** It's a lot faster to automatically add a book, but no database is perfect. You can manually add any title that's not in the OpenLibrary database.
 
 ## Improvements
 
@@ -34,4 +34,4 @@ Really quite few at this point. The layout is structured, but the logic is still
 
 ## Acknowledgements
 
-* All icons are from [Heroicons](https://heroicons.com) (MIT license)
+- All icons are from [Heroicons](https://heroicons.com) (MIT license)
