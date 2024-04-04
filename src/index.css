@@ -18,7 +18,7 @@
 
 @layer components {
   .btn {
-    @apply box-border bg-blue-9 hover:bg-blue-10 px-3 py-2 rounded-lg border text-white text-base shadow-sm hover:shadow-md w-full text-center font-semibold transition-all duration-75;
+    @apply box-border bg-blue-9 hover:bg-blue-10 px-3 py-2 rounded-lg text-white text-base w-full text-center font-semibold transition-all duration-75;
   }
   
   a.nav-link.active {

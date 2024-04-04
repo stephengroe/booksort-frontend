@@ -131,7 +131,7 @@ export default function Root() {
           <form method='post'>
             <button type='submit' className='btn flex items-center justify-center'>
               <svg
-              className='h-5 w-5 text-blue-8 align-middle mr-2'
+              className='h-5 w-5 text-white align-middle mr-2'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
