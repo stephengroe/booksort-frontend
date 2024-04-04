@@ -76,7 +76,7 @@ export default function Root() {
         </div>
         <form id="search-form" role="search" className='w-4/12 flex items-center justify-self-start pl-6 p-2'>
           <svg
-            className='h-5 w-5 text-slate-400 align-middle mr-2'
+            className='h-5 w-5 text-gray-8 align-middle mr-2'
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'
@@ -196,7 +196,7 @@ export default function Root() {
           </nav>
         </div>
 
-        <div id='detail' className='bg-slate-50 p-12 box-border w-10/12'>
+        <div id='detail' className='bg-gray-1 p-12 box-border w-10/12'>
           <div className='max-w-screen-md'>
             <Outlet />
           </div>
